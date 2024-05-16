@@ -1,0 +1,8 @@
+# ninja log v5
+1	186	7375736031432638	build.ninja	f396dd22a75f6ed5
+21	728	7372213594370749	CMakeFiles/Arcade_hub.dir/Game.cpp.obj	ce0cc19c586b33
+728	1122	7372213597930877	Arcade_hub.exe	9ddc95df4af0633f
+14	476	7372213591844600	CMakeFiles/Arcade_hub.dir/main.cpp.obj	1275744820e0b572
+4	374	7375737385424981	CMakeFiles/Arcade_hub.dir/main.cpp.obj	1275744820e0b572
+9	462	7375737386304699	CMakeFiles/Arcade_hub.dir/Game.cpp.obj	ce0cc19c586b33
+462	751	7375737389129052	Arcade_hub.exe	9ddc95df4af0633f
