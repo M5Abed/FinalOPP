@@ -4,9 +4,6 @@
 #include <iostream>
 #include <ctime>
 #include <thread>
-#include <vector>
-#include <algorithm>
-#include <cstdlib>
 
 using namespace std;
 using namespace this_thread;
@@ -22,8 +19,9 @@ public:
     void SetName(string);
     void SetDev(string);
     void SetHTP(string);
-    static void Welcome(const string&);
+    void Welcome(string);
     void GetData();
+    virtual int play()=0;
 };
 
 class RockPaperScissors:public Game{
@@ -63,6 +61,5 @@ public:
     char whoWin() ;
     int play() ;
 };
-
 
 #endif //GAME_H

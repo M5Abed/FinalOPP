@@ -9,7 +9,7 @@
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.26"
+						"string" : "3.28"
 					},
 					"projectIndex" : 0,
 					"source" : ".",
@@ -27,7 +27,7 @@
 					[
 						0
 					],
-					"name" : "Arcade_hub",
+					"name" : "Final_project",
 					"targetIndexes" : 
 					[
 						0
@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "Arcade_hub::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Arcade_hub-Debug-53e9156d68dbae80d013.json",
-					"name" : "Arcade_hub",
+					"id" : "Final_project::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Final_project-Debug-36064e3ed0e46c1e74fc.json",
+					"name" : "Final_project",
 					"projectIndex" : 0
 				}
 			]
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/moham/CLionProjects/Arcasde hub/cmake-build-debug",
-		"source" : "C:/Users/moham/CLionProjects/Arcasde hub"
+		"build" : "C:/Users/moham/CLionProjects/Final project/cmake-build-debug",
+		"source" : "C:/Users/moham/CLionProjects/Final project"
 	},
 	"version" : 
 	{

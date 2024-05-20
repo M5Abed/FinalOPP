@@ -1,5 +1,4 @@
 #include "Game.h"
-#include <utility>
 //main class
 void Game::SetName(string name) {
     this->Name = std::move(name);
@@ -10,7 +9,7 @@ void Game::SetDev(string dev) {
 void Game::SetHTP(string HTP) {
     this->HTP = std::move(HTP);
 }
-void Game::Welcome(const string& GameName) {
+void Game::Welcome(string GameName) {
     system("cls");
     cout<<"----------------------------------------\n";
     cout<<"     \"Welcome to "<< GameName << "\"             \n";
@@ -18,11 +17,11 @@ void Game::Welcome(const string& GameName) {
     sleep_for(1s);
 }
 void Game::GetData() {
-    cout<<"The name of the the game: "<<Name<<endl;
+    cout<<"The Game Name: "<<Name<<endl;
     sleep_for(1s);
-    cout<<"This game is developed by: "<<Develper<<endl;
+    cout<<"\ndeveloped by: "<<Develper<<endl;
     sleep_for(1s);
-    cout<<"How to play this game: "<<HTP<<endl;
+    cout<<"\nHow to play this game: "<<HTP<<endl;
     system("pause");
 }
 int main(); //main declaration to cam make it as return in classes below
@@ -31,9 +30,9 @@ int main(); //main declaration to cam make it as return in classes below
 RockPaperScissors::RockPaperScissors() {
     RockPaperScissors::SetName("Rock Paper Scissors");
     RockPaperScissors::SetDev("Mohamed Abed");
-    RockPaperScissors::SetHTP("\n\t\t\t\"You will play this game vs PC \n     You will choose ROCK,PAPER OR SCISSORS and the PC will chose one also and will see who wil gain more points\" \n");
+    RockPaperScissors::SetHTP(
+            "\n\t\t\t\"You will play this game vs PC \n     You will choose ROCK,PAPER OR SCISSORS and the PC will chose one also and will see who wil gain more points\" \n");
     RockPaperScissors::GetData();
-    sleep_for(3s);
 }
 int RockPaperScissors::play() {
     bool draw=false;
@@ -52,6 +51,7 @@ int RockPaperScissors::play() {
         }
         if (input[0]=='e') {
             system("cls");
+            return main();
         }
         if ((input[0]=='r'&&res==1)||(input[0]=='p'&&res==2)||(input[0]=='s'&&res==3)) {
             draw=true;
@@ -146,7 +146,7 @@ int RockPaperScissors::play() {
 Connect4::Connect4() {
     Connect4::SetName("Connect 4");
     Connect4::SetDev("Khaled Youssef");
-    Connect4::SetHTP("\n\"Connect Four is a classic two-player game where the goal is to get four of your X,or,O checkers in a row\n   \teither horizontally, vertically, or diagonally NOTE THAT:"
+    Connect4::SetHTP("\n\"Connect Four is a classic two-player game where the goal is to get four of your X,or,O checkers in a row\n   either horizontally, vertically, or diagonally NOTE THAT:"
                      " in this game player 1 is X , player 2 is O\" \n");
     Connect4::GetData();
     player = 1;
@@ -234,12 +234,18 @@ void Connect4::draw() {
 }
 int Connect4::play() {
     Connect4::Welcome(this->Name);
-    sleep_for(2s);
+    sleep_for(1s);
     draw();
     while (!gameEnd) {
-        cout << "Player " << player << ": ";
         int input;
-        cin >> input;
+        if  (player==1) {
+            cout << "Player X : ";
+            cin >> input;
+        }
+        else{
+            cout << "Player O : ";
+            cin >> input;
+        }
         handleInput(input - 1);
         draw();
         checkWinner();

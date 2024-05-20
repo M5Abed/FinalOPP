@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: Arcade_hub
+# Project: Final_project
 # Configurations: Debug
 # =============================================================================
 
@@ -39,53 +39,59 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = C$:/Users/moham/CLionProjects/Arcasde$ hub/cmake-build-debug/
+cmake_ninja_workdir = C$:/Users/moham/CLionProjects/Final$ project/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target Arcade_hub
+# Object build statements for EXECUTABLE target Final_project
 
 
 #############################################
-# Order-only phony target for Arcade_hub
+# Order-only phony target for Final_project
 
-build cmake_object_order_depends_target_Arcade_hub: phony || CMakeFiles/Arcade_hub.dir
+build cmake_object_order_depends_target_Final_project: phony || CMakeFiles/Final_project.dir
 
-build CMakeFiles/Arcade_hub.dir/main.cpp.obj: CXX_COMPILER__Arcade_hub_unscanned_Debug C$:/Users/moham/CLionProjects/Arcasde$ hub/main.cpp || cmake_object_order_depends_target_Arcade_hub
-  DEP_FILE = CMakeFiles\Arcade_hub.dir\main.cpp.obj.d
+build CMakeFiles/Final_project.dir/main.cpp.obj: CXX_COMPILER__Final_project_unscanned_Debug C$:/Users/moham/CLionProjects/Final$ project/main.cpp || cmake_object_order_depends_target_Final_project
+  DEP_FILE = CMakeFiles\Final_project.dir\main.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Arcade_hub.dir
-  OBJECT_FILE_DIR = CMakeFiles\Arcade_hub.dir
+  OBJECT_DIR = CMakeFiles\Final_project.dir
+  OBJECT_FILE_DIR = CMakeFiles\Final_project.dir
 
-build CMakeFiles/Arcade_hub.dir/Game.cpp.obj: CXX_COMPILER__Arcade_hub_unscanned_Debug C$:/Users/moham/CLionProjects/Arcasde$ hub/Game.cpp || cmake_object_order_depends_target_Arcade_hub
-  DEP_FILE = CMakeFiles\Arcade_hub.dir\Game.cpp.obj.d
+build CMakeFiles/Final_project.dir/Guessing_Word.cpp.obj: CXX_COMPILER__Final_project_unscanned_Debug C$:/Users/moham/CLionProjects/Final$ project/Guessing_Word.cpp || cmake_object_order_depends_target_Final_project
+  DEP_FILE = CMakeFiles\Final_project.dir\Guessing_Word.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Arcade_hub.dir
-  OBJECT_FILE_DIR = CMakeFiles\Arcade_hub.dir
+  OBJECT_DIR = CMakeFiles\Final_project.dir
+  OBJECT_FILE_DIR = CMakeFiles\Final_project.dir
+
+build CMakeFiles/Final_project.dir/Game.cpp.obj: CXX_COMPILER__Final_project_unscanned_Debug C$:/Users/moham/CLionProjects/Final$ project/Game.cpp || cmake_object_order_depends_target_Final_project
+  DEP_FILE = CMakeFiles\Final_project.dir\Game.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Final_project.dir
+  OBJECT_FILE_DIR = CMakeFiles\Final_project.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target Arcade_hub
+# Link build statements for EXECUTABLE target Final_project
 
 
 #############################################
-# Link the executable Arcade_hub.exe
+# Link the executable Final_project.exe
 
-build Arcade_hub.exe: CXX_EXECUTABLE_LINKER__Arcade_hub_Debug CMakeFiles/Arcade_hub.dir/main.cpp.obj CMakeFiles/Arcade_hub.dir/Game.cpp.obj
+build Final_project.exe: CXX_EXECUTABLE_LINKER__Final_project_Debug CMakeFiles/Final_project.dir/main.cpp.obj CMakeFiles/Final_project.dir/Guessing_Word.cpp.obj CMakeFiles/Final_project.dir/Game.cpp.obj
   FLAGS = -g
   LINK_FLAGS = -static
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\Arcade_hub.dir
+  OBJECT_DIR = CMakeFiles\Final_project.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = Arcade_hub.exe
-  TARGET_IMPLIB = libArcade_hub.dll.a
-  TARGET_PDB = Arcade_hub.exe.dbg
+  TARGET_FILE = Final_project.exe
+  TARGET_IMPLIB = libFinal_project.dll.a
+  TARGET_PDB = Final_project.exe.dbg
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\moham\CLionProjects\Arcasde hub\cmake-build-debug" && "C:\Users\moham\AppData\Local\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\moham\CLionProjects\Final project\cmake-build-debug" && "C:\Users\moham\AppData\Local\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -96,7 +102,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\moham\CLionProjects\Arcasde hub\cmake-build-debug" && "C:\Users\moham\AppData\Local\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"C:\Users\moham\CLionProjects\Arcasde hub" -B"C:\Users\moham\CLionProjects\Arcasde hub\cmake-build-debug""
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\moham\CLionProjects\Final project\cmake-build-debug" && "C:\Users\moham\AppData\Local\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"C:\Users\moham\CLionProjects\Final project" -B"C:\Users\moham\CLionProjects\Final project\cmake-build-debug""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -106,7 +112,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build Arcade_hub: phony Arcade_hub.exe
+build Final_project: phony Final_project.exe
 
 # =============================================================================
 # Folder targets.
@@ -114,9 +120,9 @@ build Arcade_hub: phony Arcade_hub.exe
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/moham/CLionProjects/Arcasde hub/cmake-build-debug
+# Folder: C:/Users/moham/CLionProjects/Final project/cmake-build-debug
 
-build all: phony Arcade_hub.exe
+build all: phony Final_project.exe
 
 # =============================================================================
 # Built-in targets
@@ -125,14 +131,14 @@ build all: phony Arcade_hub.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake C$:/Users/moham/CLionProjects/Arcasde$ hub/CMakeLists.txt CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake C$:/Users/moham/CLionProjects/Final$ project/CMakeLists.txt CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake C$:/Users/moham/CLionProjects/Arcasde$ hub/CMakeLists.txt CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake: phony
+build C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake C$:/Users/moham/AppData/Local/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake C$:/Users/moham/CLionProjects/Final$ project/CMakeLists.txt CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake: phony
 
 
 #############################################
