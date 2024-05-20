@@ -29,7 +29,7 @@ int main(); //main declaration to cam make it as return in classes below
 //Rock paper scissors
 RockPaperScissors::RockPaperScissors() {
     RockPaperScissors::SetName("Rock Paper Scissors");
-    RockPaperScissors::SetDev("Mohamed Abed");
+    RockPaperScissors::SetDev("Mohamed Abed, Sherif Hasan");
     RockPaperScissors::SetHTP(
             "\n\t\t\t\"You will play this game vs PC \n     You will choose ROCK,PAPER OR SCISSORS and the PC will chose one also and will see who wil gain more points\" \n");
     RockPaperScissors::GetData();
@@ -145,7 +145,7 @@ int RockPaperScissors::play() {
 //Connect 4
 Connect4::Connect4() {
     Connect4::SetName("Connect 4");
-    Connect4::SetDev("Khaled Youssef");
+    Connect4::SetDev("Khaled Youssef, Salma Hany");
     Connect4::SetHTP("\n\"Connect Four is a classic two-player game where the goal is to get four of your X,or,O checkers in a row\n   either horizontally, vertically, or diagonally NOTE THAT:"
                      " in this game player 1 is X , player 2 is O\" \n");
     Connect4::GetData();
@@ -259,10 +259,9 @@ int Connect4::play() {
 //TIc Tac Toe
 TicTacToe::TicTacToe() {
     TicTacToe::SetName("Tic Tac Toe");
-    TicTacToe::SetDev("Mariam Mohamed");
+    TicTacToe::SetDev("Mariam Mohamed, Mennatullah Abed");
     TicTacToe::SetHTP("\n\t\"Classic TicTacToe or as known as (X,O), You need to make your character (X or O) be in the same line\n\t\teither this line is horizontally, vertically, or diagonally\" \n");
     TicTacToe::GetData();
-    sleep_for(3s);
 }
 char TicTacToe::whoWin() {
     int xc, oc;
@@ -322,24 +321,27 @@ void TicTacToe::printMatrix() {
 }
 int TicTacToe::play() {
     TicTacToe::Welcome(this->Name);
-    sleep_for(2s);
+    sleep_for(1s);
     while (whoWin() == '.') {
         printMatrix();
         char pos;
         cout << "Choose your position - Player (" << player << ") :";
         cin >> pos;
+        bool validMove = false;
         for (int x = 0; x < 3; x++) {
             for (int y = 0; y < 3; y++) {
                 if (matrix[x][y] == pos) {
                     matrix[x][y] = player;
-                    if (player == 'x')
-                        player = 'o';
-                    else
-                        player = 'x';
+                    validMove = true;
+                    player = (player == 'x') ? 'o' : 'x';
+                    break;
                 }
             }
         }
-        cout << "Invalid move! Please choose a valid position." << endl;
+        if (!validMove) {
+            cout << "Invalid move! Please choose a valid position." << endl;
+            sleep_for(2s);
+        }
     }
     printMatrix();
     char winner = whoWin();
