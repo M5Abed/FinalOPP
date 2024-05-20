@@ -1,13 +1,13 @@
 #include "Game.h"
 //main class
 void Game::SetName(string name) {
-    this->Name = std::move(name);
+    this->Name = name;
 }
 void Game::SetDev(string dev) {
-    this->Develper =std::move(dev);
+    this->Develper =dev;
 }
 void Game::SetHTP(string HTP) {
-    this->HTP = std::move(HTP);
+    this->HTP = HTP;
 }
 void Game::Welcome(string GameName) {
     system("cls");
@@ -53,6 +53,7 @@ int RockPaperScissors::play() {
             system("cls");
             return main();
         }
+        //1 is reference for rock, 2 for paper, 3 for scissors
         if ((input[0]=='r'&&res==1)||(input[0]=='p'&&res==2)||(input[0]=='s'&&res==3)) {
             draw=true;
             sleep_for(0.5s);
