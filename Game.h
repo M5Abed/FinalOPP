@@ -13,7 +13,7 @@ using namespace this_thread;
 class Game {
 protected:
     string Name;
-    string Develper;
+    string developer;
     string HTP;
 public:
     void SetName(string);
@@ -22,6 +22,7 @@ public:
     void Welcome(string);
     void GetData();
     virtual int play()=0;
+    virtual ~Game();
 };
 
 class RockPaperScissors:public Game{
@@ -30,7 +31,7 @@ protected:
     int Rand=0;
     int res=0;
 public:
-    int play();
+    int play() override;
     RockPaperScissors();
 };
 
@@ -44,10 +45,9 @@ private:
 public:
     Connect4();
     void handleInput(int input) ;
-
     void checkWinner() ;
     void draw() ;
-    int play() ;
+    int play() override ;
 
 };
 
@@ -59,7 +59,7 @@ public:
     TicTacToe();
     void printMatrix();
     char whoWin() ;
-    int play() ;
+    int play() override ;
 };
 
 #endif //GAME_H

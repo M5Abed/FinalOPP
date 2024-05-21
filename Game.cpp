@@ -1,13 +1,13 @@
 #include "Game.h"
 //main class
 void Game::SetName(string name) {
-    this->Name = name;
+    this->Name = std::move(name);
 }
 void Game::SetDev(string dev) {
-    this->Develper =dev;
+    this->developer =std::move(dev);
 }
 void Game::SetHTP(string HTP) {
-    this->HTP = HTP;
+    this->HTP = std::move(HTP);
 }
 void Game::Welcome(string GameName) {
     system("cls");
@@ -19,11 +19,16 @@ void Game::Welcome(string GameName) {
 void Game::GetData() {
     cout<<"The Game Name: "<<Name<<endl;
     sleep_for(1s);
-    cout<<"\ndeveloped by: "<<Develper<<endl;
+    cout << "\ndeveloped by: " << developer << endl;
     sleep_for(1s);
     cout<<"\nHow to play this game: "<<HTP<<endl;
     system("pause");
 }
+
+Game::~Game() {
+    delete this;
+} //Destructor delete the object
+
 int main(); //main declaration to cam make it as return in classes below
 
 //Rock paper scissors
@@ -160,6 +165,32 @@ Connect4::Connect4() {
         }
     }
 }
+void Connect4::draw() {
+    system("cls");
+    // to initialize the columns with its numbers
+    for (int j = 0; j < 7; j++) {
+        cout << "-" << j + 1 << "--";
+    }
+    //to make numbers horizontal
+    cout << endl;
+    //to initialize the shape and declare player 1x,2o
+    for (int i = 0; i < 6; i++) {
+        for (int j = 0; j < 7; j++) {
+            if (board[i][j] == 0) {
+                cout << "|  |";
+            } else if (board[i][j] == 1) {
+                cout << "|x |";
+            } else if (board[i][j] == 2) {
+                cout << "|o |";
+            }
+        }
+        cout << endl;
+    }
+    for (int j = 0; j < 7; j++) {
+        cout << "====";
+    }
+    cout << endl;
+}
 void Connect4::handleInput(int input) {
     if (rowIndex >= 0) {
         if (board[rowIndex][input] != 0) { // if the row is full
@@ -207,32 +238,6 @@ void Connect4::checkWinner() {
         }
     }
 }
-void Connect4::draw() {
-    system("cls");
-    // to initialize the columns with its numbers
-    for (int j = 0; j < 7; j++) {
-        cout << "-" << j + 1 << "--";
-    }
-    //to make numbers horizontal
-    cout << endl;
-    //to initialize the shape and declare player 1x,2o
-    for (int i = 0; i < 6; i++) {
-        for (int j = 0; j < 7; j++) {
-            if (board[i][j] == 0) {
-                cout << "|  |";
-            } else if (board[i][j] == 1) {
-                cout << "|x |";
-            } else if (board[i][j] == 2) {
-                cout << "|o |";
-            }
-        }
-        cout << endl;
-    }
-    for (int j = 0; j < 7; j++) {
-        cout << "====";
-    }
-    cout << endl;
-}
 int Connect4::play() {
     Connect4::Welcome(this->Name);
     sleep_for(1s);
@@ -247,6 +252,9 @@ int Connect4::play() {
             cout << "Player O : ";
             cin >> input;
         }
+        if (input=='e'){
+            return main();
+        } //to back to main menu of user type e
         handleInput(input - 1);
         draw();
         checkWinner();
@@ -263,6 +271,15 @@ TicTacToe::TicTacToe() {
     TicTacToe::SetDev("Mariam Mohamed, Mennatullah Abed");
     TicTacToe::SetHTP("\n\t\"Classic TicTacToe or as known as (X,O), You need to make your character (X or O) be in the same line\n\t\teither this line is horizontally, vertically, or diagonally\" \n");
     TicTacToe::GetData();
+}
+void TicTacToe::printMatrix() {
+    system("cls");
+    for (int x = 0; x < 3; x++) {
+        for (int y = 0; y < 3; y++) {
+            cout << matrix[x][y] << '\t';
+        }
+        cout << endl;
+    }
 }
 char TicTacToe::whoWin() {
     int xc, oc;
@@ -311,15 +328,6 @@ char TicTacToe::whoWin() {
 
     return '.';
 }
-void TicTacToe::printMatrix() {
-    system("cls");
-    for (int x = 0; x < 3; x++) {
-        for (int y = 0; y < 3; y++) {
-            cout << matrix[x][y] << '\t';
-        }
-        cout << endl;
-    }
-}
 int TicTacToe::play() {
     TicTacToe::Welcome(this->Name);
     sleep_for(1s);
@@ -328,6 +336,9 @@ int TicTacToe::play() {
         char pos;
         cout << "Choose your position - Player (" << player << ") :";
         cin >> pos;
+        if (pos=='e'){
+            return main();
+        } //to back to main menu of user type e
         bool validMove = false;
         for (int x = 0; x < 3; x++) {
             for (int y = 0; y < 3; y++) {

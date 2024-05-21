@@ -6,6 +6,7 @@ int main() {
 
     int ans;
     do {
+        system("cls");
         cout<<"             \"Welcome to ARCADE\"             \n";
         cout<<"--------------------------------------------------\n";
         cout<<"\nChoose your game\n";
