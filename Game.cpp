@@ -36,7 +36,7 @@ RockPaperScissors::RockPaperScissors() {
     RockPaperScissors::SetName("Rock Paper Scissors");
     RockPaperScissors::SetDev("Mohamed Abed, Sherif Hasan");
     RockPaperScissors::SetHTP(
-            "\n\t\t\t\"You will play this game vs PC \n     You will choose ROCK,PAPER OR SCISSORS and the PC will chose one also and will see who wil gain more points\" \n");
+            "\n\t\t\t\"You will play this game vs PC \n     You will choose ROCK,PAPER OR SCISSORS and the PC will choose one also and will see who will get more points\" \n\nEnter (e) to quit the game\n");
     RockPaperScissors::GetData();
 }
 int RockPaperScissors::play() {
@@ -153,7 +153,7 @@ Connect4::Connect4() {
     Connect4::SetName("Connect 4");
     Connect4::SetDev("Khaled Youssef, Salma Hany");
     Connect4::SetHTP("\n\"Connect Four is a classic two-player game where the goal is to get four of your X,or,O checkers in a row\n   either horizontally, vertically, or diagonally NOTE THAT:"
-                     " in this game player 1 is X , player 2 is O\" \n");
+                     " in this game player 1 is X , player 2 is O\" \n\nEnter (0) to quit the game\n");
     Connect4::GetData();
     player = 1;
     rowIndex = 5;
@@ -196,11 +196,13 @@ void Connect4::handleInput(int input) {
         if (board[rowIndex][input] != 0) { // if the row is full
             rowIndex--;
             handleInput(input);
-        } else {
+        }
+        else {
             board[rowIndex][input] = player;
             rowIndex = 5;
         }
-    } else {
+    }
+    else {
         cout << "Wrong input please try again !\n";
         player = (player == 1) ? 2 : 1;
         rowIndex = 5;
@@ -252,9 +254,7 @@ int Connect4::play() {
             cout << "Player O : ";
             cin >> input;
         }
-        if (input=='e'){
-            return main();
-        } //to back to main menu of user type e
+        if (input==0) return main(); //to back to main menu of user type e
         handleInput(input - 1);
         draw();
         checkWinner();
@@ -264,12 +264,11 @@ int Connect4::play() {
     system("cls");
     return main();
 }
-
 //TIc Tac Toe
 TicTacToe::TicTacToe() {
     TicTacToe::SetName("Tic Tac Toe");
     TicTacToe::SetDev("Mariam Mohamed, Mennatullah Abed");
-    TicTacToe::SetHTP("\n\t\"Classic TicTacToe or as known as (X,O), You need to make your character (X or O) be in the same line\n\t\teither this line is horizontally, vertically, or diagonally\" \n");
+    TicTacToe::SetHTP("\n\t\"Classic TicTacToe or as known as (X,O), You need to make your character (X or O) be in the same line\n\t\teither this line is horizontally, vertically, or diagonally\" \n\nEnter (e) to quit the game\n");
     TicTacToe::GetData();
 }
 void TicTacToe::printMatrix() {
@@ -336,9 +335,7 @@ int TicTacToe::play() {
         char pos;
         cout << "Choose your position - Player (" << player << ") :";
         cin >> pos;
-        if (pos=='e'){
-            return main();
-        } //to back to main menu of user type e
+        if (pos=='e') return main(); //to back to main menu of user type e
         bool validMove = false;
         for (int x = 0; x < 3; x++) {
             for (int y = 0; y < 3; y++) {

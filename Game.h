@@ -44,7 +44,7 @@ private:
 
 public:
     Connect4();
-    void handleInput(int input) ;
+    void handleInput(int) ;
     void checkWinner() ;
     void draw() ;
     int play() override ;
