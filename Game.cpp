@@ -24,10 +24,7 @@ void Game::GetData() {
     cout<<"\nHow to play this game: "<<HTP<<endl;
     system("pause");
 }
-
-Game::~Game() {
-    delete this;
-} //Destructor delete the object
+Game::~Game() {} //Destructor delete the object
 
 int main(); //main declaration to cam make it as return in classes below
 
